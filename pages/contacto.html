@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="shortcut icon" href="../media/pelota.ico">
+        <title>Contacto</title>
+    </head>
+
+    <body>
+        <header>
+            <nav>
+                <a href="../index.html"><img src="../media/LOGO.png" alt="logoEnfoco" class="logo"></a>
+                
+                <div>
+                    <p>Seguinos en las redes | <img src="../media/ig.jpg" alt="logoIG" class="ig"> @enfoco</p>
+                    <ul>
+                        <li><a href="../index.html">Inicio</a></li>
+                        <li><a href="productos.html">Productos</a></li>
+                        <li><a href="galeria.html">Galeria de fotos</a></li>
+                        <li><a href="quienesSomos.html">Quienes somos</a></li>
+                        <li><a href="#">Contacto</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        
+        <section>
+            <article class="foto-comun-pages"> <!-- Foto que va en todas menos el index -->
+                <p>CONTACTO</p>
+            </article>
+
+            <article class="boxModel-infoContacto">
+                <div>
+                    <img src="../media/location.jpg" alt="location">
+                    <p>Buenos Aires, Argentina</p>
+                </div>
+                <div>
+                    <img src="../media/ig.jpg" alt="logoIG">
+                    <p>@enfoco</p>
+                </div>
+                <div>
+                    <img src="../media/mail.jpg" alt="">
+                    <p>enfoco@gmail.com</p>
+                </div>
+            </article>
+            
+            <article class="boxModel-Articleform">
+                <form action="" method="GET" enctype="multipart/form-data">
+                    
+                    <div class="boxModel-Articleform__conjunto">
+                        <div class="boxModel-Articleform__conjunto__cadaTextBox">
+                            <label for="nombre">Nombre*</label>
+                            <input type="text" name="nombre" required="">
+                        </div>
+
+                        <div class="boxModel-Articleform__conjunto__cadaTextBox">
+                            <label for="apellido">Apellido</label>
+                            <input type="text" name="apellido">
+                        </div>
+                    </div>
+
+                    <div class="boxModel-Articleform__conjunto">
+                        <div class="boxModel-Articleform__conjunto__cadaTextBox">
+                            <label for="email">Email*</label> 
+                            <input type="email" name="email" required="">
+                        </div>
+
+                        <div class="boxModel-Articleform__conjunto__cadaTextBox">
+                            <label for="telefono">Telefono</label> 
+                            <input type="number" name="telefono">
+                        </div>
+                    </div>
+
+                    <div class="boxModel-Articleform__conjunto">
+                        <div class="boxModel-Articleform__conjunto__cadaTextBox">
+                            <label for="mensaje">Mensaje*</label>
+                            <textarea name="mensaje" cols="30" rows="10" required></textarea> 
+                            <label for="mensaje" id="campoObligatorio">*campo obligatorio </label>
+                        </div>
+                    </div>
+                    
+                    <div id="enviarButton">
+                        <input type="submit">
+                    </div>
+                </form>
+            </article>
+        </section>
+
+        <footer>
+            <p>----- Aca va el footer -----</p>
+        </footer>
+    </body>
+</html>
