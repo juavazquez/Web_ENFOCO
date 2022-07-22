@@ -74,7 +74,6 @@ footer {
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-top: 10px;
     background-color: black; 
     height: 4vh;
 }
@@ -231,54 +230,41 @@ section {
 
 /* --------------------- Productos --------------------- */
 
-
-
-
-
-
-
-
-/* .boxModel-productos {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-evenly;
-    align-items: center;
+#gridProductos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    padding: 70px 3%;
 }
-
-.boxModel-productos img {
-    width: 85%;
+#gridProductos div {
+    justify-self: center;
+    border: 3px solid black;
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: whitesmoke;
+}
+#gridProductos img {
+    width: 90%;
     height: 60%;
     border: 1px solid black;
 }
-
-.boxModel-productos p {
-    font-size: 2rem;
+#gridProductos p{
+    font-size: 1.8rem;
     text-align: center;
-} 
-
-.boxModel-productos__adentroDelDiv {
-    width: 350px;
-    height: 500px;
-    display: inline-block;
-    border: 2px solid black;
-    margin-top: 80px;
-    margin-bottom: 50px;
-
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: space-around;
-    align-items: center;
 }
-
-.boxModel-productos__adentroDelDiv_button {
+.productos-button {
     padding: 10px 20px;
-    background-color: grey;
+    background-color: orange;
     position: relative;
     bottom: 10px;
     border-radius: 5px;
     color: black;
     text-decoration: none;
-} */
+}
+
 
 /* --------------------- Galeria de fotos --------------------- */
 
@@ -348,47 +334,6 @@ section {
     margin-bottom: 15px;
 }
 
-/* .boxModel-quienesSomos,
-.boxModel-quienesSomos--reverse {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    align-items: flex-start;
-    margin: 5% 10%;
-}
-
-.boxModel-quienesSomos--reverse {
-    display: flex;
-    flex-flow: row-reverse wrap;
-}
-
-.boxModel-quienesSomos img,
-.boxModel-quienesSomos--reverse img {
-    border: 2px solid black;
-    width: 350px;
-    height: 350px;
-}
-
-.boxModel-quienesSomos div,
-.boxModel-quienesSomos--reverse div {
-    display: inline-block;
-    width: 40%; 
-    height: 100%;
-}
-
-.boxModel-quienesSomos h3,
-.boxModel-quienesSomos--reverse h3 {
-    font-size: 3rem;
-    margin-bottom: 20px;
-    padding-top: 20px;
-}
-
-.boxModel-quienesSomos p,
-.boxModel-quienesSomos--reverse p {
-    display: inline-block;
-    font-size: 2rem;
-    text-align: justify;
-} */
 
 /* --------------------- Contacto --------------------- */
 
