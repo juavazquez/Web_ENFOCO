@@ -89,10 +89,6 @@ section {
 
 /* --------------------- Index --------------------- */
 
-#gridIndex {
-
-}
-
 /* Video de inicio */
 .boxModel-video {
     height: 91vh;
@@ -268,17 +264,17 @@ section {
 
 /* --------------------- Galeria de fotos --------------------- */
 
-.boxModel-galeria {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-evenly;
+#gridGaleria {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    row-gap: 5px;
+    column-gap: 10px;
+    margin: 5px;
 }
-
-.boxModel-galeria img {
-    width: 200px;
-    height: 200px;
-    border: 1px solid black;
-    margin: 50px 20px;
+#gridGaleria img {
+    width: 100%;
+    border: 2px solid black;
 }
 
 
