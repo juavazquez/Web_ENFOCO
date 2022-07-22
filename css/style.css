@@ -364,87 +364,63 @@ section {
 }
 
 /* form */
-.boxModel-Articleform {
-    padding: 20px;
-    margin: 10px;
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: space-evenly;
-    align-items: center;
 
+#nombre {
+    grid-area: nombre;
+}
+#apellido {
+    grid-area: apellido;
+}
+#email {
+    grid-area: email;
+}
+#telefono {
+    grid-area: telefono;
+}
+#mensaje {
+    grid-area: mensaje;
+}
+#enviarButton {
+    grid-area: enviar;
+}
+#gridForm {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4, auto);
+    column-gap: 5%;
+    row-gap: 10px;
+    grid-template-areas: "nombre apellido" "email telefono" "mensaje mensaje" "enviar enviar";
+
+    margin: 50px 25%;
 }
 
-.boxModel-Articleform__conjunto {
-    margin: 15px 20px;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: flex-start;
-    align-items: center;
+#gridForm input,
+#gridForm textarea {
+    width: 100%;
 }
-
-
-.boxModel-Articleform__conjunto__cadaTextBox {
-    display: inline-block;
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    align-items: flex-start;
-    padding: 10px;
-    margin: 5px;
-}
-
-.boxModel-Articleform__conjunto__cadaTextBox textarea {
-    width: 700px;
-}
-
-.boxModel-Articleform__conjunto__cadaTextBox input {
-    width: 330px;
+#gridForm input {
     height: 30px;
 }
-
-.boxModel-Articleform__conjunto__cadaTextBox label {
+#gridForm textarea {
+    resize: none;
+}
+#enviarButton {
+    justify-self: center;
+}
+#enviarButton input {
+    width: 80px;
+    height: 35px;
+    font-size: 2rem;
+}
+#gridForm label {
     font-size: 1.75rem;
 }
-
 #campoObligatorio {
     font-size: 1.3rem;
 }
 
-#enviarButton {
-    text-align: center;
-}
-
-#enviarButton input {
-    font-size: 1.75rem;
-    padding: 10px 15px;
-    border: none;
-    background-color: orange;
-    border-radius: 5px;
-}
-
 
 /* --------------------- Media Queries --------------------- */
-
-/* Celular */
-
-
-
-
-/*    (header y footer quedan iguales en todas)
-header
-
-#sectionIndex
-gridArea: "sectionIndex"
-
-footer
-
-#sectionProductos
-gridArea: "sectionProductos"
-
-atc etc
-
-y vas haciendo grids para diseñar cada pagina 
-*/
 
 
 /* 

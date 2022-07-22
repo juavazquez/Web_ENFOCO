@@ -47,39 +47,33 @@
                 </div>
             </article>
             
-            <article class="boxModel-Articleform">
-                <form action="" method="GET" enctype="multipart/form-data">
-                    
-                    <div class="boxModel-Articleform__conjunto">
-                        <div class="boxModel-Articleform__conjunto__cadaTextBox">
-                            <label for="nombre">Nombre*</label>
-                            <input type="text" name="nombre" required="">
-                        </div>
+            <article >
+                <form action="" method="GET" enctype="multipart/form-data" id="gridForm">
 
-                        <div class="boxModel-Articleform__conjunto__cadaTextBox">
-                            <label for="apellido">Apellido</label>
-                            <input type="text" name="apellido">
-                        </div>
+                    <div id="nombre">
+                        <label for="nombre">Nombre*</label>
+                        <input type="text" name="nombre" required="">
                     </div>
 
-                    <div class="boxModel-Articleform__conjunto">
-                        <div class="boxModel-Articleform__conjunto__cadaTextBox">
-                            <label for="email">Email*</label> 
-                            <input type="email" name="email" required="">
-                        </div>
-
-                        <div class="boxModel-Articleform__conjunto__cadaTextBox">
-                            <label for="telefono">Telefono</label> 
-                            <input type="number" name="telefono">
-                        </div>
+                    <div id="apellido">
+                        <label for="apellido">Apellido</label>
+                        <input type="text" name="apellido">
                     </div>
 
-                    <div class="boxModel-Articleform__conjunto">
-                        <div class="boxModel-Articleform__conjunto__cadaTextBox">
-                            <label for="mensaje">Mensaje*</label>
-                            <textarea name="mensaje" cols="30" rows="10" required></textarea> 
-                            <label for="mensaje" id="campoObligatorio">*campo obligatorio </label>
-                        </div>
+                    <div id="email">
+                        <label for="email">Email*</label> 
+                        <input type="email" name="email" required="">
+                    </div>
+
+                    <div id="telefono">
+                        <label for="telefono">Telefono</label> 
+                        <input type="number" name="telefono">
+                    </div>
+
+                    <div id="mensaje">
+                        <label for="mensaje">Mensaje*</label>
+                        <textarea name="mensaje" cols="30" rows="10" required></textarea> 
+                        <p id="campoObligatorio">*campo obligatorio</p>
                     </div>
                     
                     <div id="enviarButton">
