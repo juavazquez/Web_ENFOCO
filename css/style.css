@@ -202,33 +202,6 @@ section {
     align-items: center;
 }
 
-/* .boxModel-fotosFinal {
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: space-evenly;
-}
-
-.boxModel-fotosFinal div {
-    display: flex;
-    flex-flow: row nowrap;
-    align-items: center;
-}
-
-#divDelMedioFotosFinal {
-    margin: 10px 0;
-}
-
-.boxModel-fotosFinal img {
-    width: 75vw;
-    height: 400px;
-}
-
-.boxModel-fotosFinal p {
-    display: inline-block;
-    text-align: center;
-    font-size: 4rem;
-    width: 25vw;
-} */
 
 /* --------------------- Foto comun pages --------------------- */
 
@@ -242,7 +215,8 @@ section {
 
     background-image: url(../media/fotoPages.jpg);
     background-repeat: no-repeat;
-    background-size: 100vw;
+    background-size: cover;
+    background-position: center;
 }
 
 .foto-comun-pages p {
@@ -257,7 +231,14 @@ section {
 
 /* --------------------- Productos --------------------- */
 
-.boxModel-productos {
+
+
+
+
+
+
+
+/* .boxModel-productos {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
@@ -297,7 +278,7 @@ section {
     border-radius: 5px;
     color: black;
     text-decoration: none;
-}
+} */
 
 /* --------------------- Galeria de fotos --------------------- */
 
@@ -317,7 +298,57 @@ section {
 
 /* --------------------- Quienes Somos --------------------- */
 
-.boxModel-quienesSomos,
+#quienes1_titulo {
+    grid-area: titulo1;
+}
+#quienes1_parrafo {
+    grid-area: parrafo1;
+    margin-bottom: 50px;
+}
+#quienes1_img {
+    grid-area: img1;
+    margin-bottom: 50px;
+    justify-self: flex-end;
+}
+#quienesVacio {
+    grid-area: vacio;
+}
+#quienes2_titulo {
+    grid-area: titulo2;
+}
+#quienes2_parrafo {
+    grid-area: parrafo2;
+}
+#quienes2_img {
+    grid-area: img2;
+
+}
+#gridQuienes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas: "titulo1 titulo1" "parrafo1 img1" "vacio titulo2" "img2 parrafo2";
+    column-gap: 5%;
+    margin: 5%;
+}
+
+#quienes1_img,
+#quienes2_img {
+    border: 2px solid black;
+    width: 85%;
+}
+#quienes1_parrafo,
+#quienes2_parrafo {
+    font-size: 2rem;
+    text-align: justify;
+}
+#quienes1_titulo,
+#quienes2_titulo {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+/* .boxModel-quienesSomos,
 .boxModel-quienesSomos--reverse {
     display: flex;
     flex-flow: row wrap;
@@ -341,7 +372,7 @@ section {
 .boxModel-quienesSomos div,
 .boxModel-quienesSomos--reverse div {
     display: inline-block;
-    width: 40%;
+    width: 40%; 
     height: 100%;
 }
 
@@ -357,7 +388,7 @@ section {
     display: inline-block;
     font-size: 2rem;
     text-align: justify;
-}
+} */
 
 /* --------------------- Contacto --------------------- */
 
