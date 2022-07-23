@@ -326,6 +326,7 @@ section {
 #quienes2_img {
     border: 2px solid black;
     width: 85%;
+    height: 300px;
 }
 #quienes1_parrafo,
 #quienes2_parrafo {
@@ -510,6 +511,22 @@ section {
     }
 
     /* Quienes somos */
+    #gridQuienes {
+        display: flex;
+        flex-direction: column;
+        margin: 30px 30px 0 30px;
+
+    }
+    #quienes1_img,
+    #quienes2_img {
+        width: 100%;
+    }
+    #quienes1_parrafo,
+    #quienes2_parrafo {
+        margin-bottom: 50px;
+        font-size: 1.7rem;
+    }
+
     /* Contacto */
 }
 
