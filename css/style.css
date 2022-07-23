@@ -343,34 +343,34 @@ section {
 /* --------------------- Contacto --------------------- */
 
 /* barrita info contacto */
-.boxModel-infoContacto {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-around;
+
+#gridInfoContacto {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-evenly;
     align-items: center;
     padding: 20px 0;
     border: 2px solid black;
+    justify-items: center;
 }
-
-.boxModel-infoContacto div {
-    display: inline-block;
+#gridInfoContacto div {
+    height: 100px;
     display: flex;
-    flex-flow: row wrap;
+    flex-direction: row;
     align-items: center;
 }
-
-.boxModel-infoContacto img {
+#gridInfoContacto img {
     width: 40px;
     height: 40px;
     padding: 5px;
     border: 3px solid black;
-    margin-right: 10px;
 }
-
-.boxModel-infoContacto p {
+#gridInfoContacto p {
     display: inline-block;
     font-size: 2rem;
-}
+    text-align: center;
+    padding: 10px;
+} 
 
 /* form */
 
@@ -528,6 +528,7 @@ section {
     }
 
     /* Contacto */
+    
 }
 
 
