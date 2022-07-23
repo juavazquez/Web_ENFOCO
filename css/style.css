@@ -13,9 +13,8 @@ html {
 /* ---------------- Header de todas las paginas --------------- */
 
 .logo {
-    width: 200px;
+    height: 100%;
     display: inline-block;
-    padding-top: 10px;
 }
 
 .ig {
@@ -27,10 +26,10 @@ html {
 
 nav {
     background-color: white;
-    border-bottom: 1px solid whitesmoke;
+    box-shadow: 0 0 5px 0 grey;
     position: fixed;
     top: 0;
-    width: 100vw;
+    width: 100%;
     height: 90px;
     display: flex;
     flex-flow: row nowrap;
@@ -42,6 +41,7 @@ nav div {
     display: flex;
     flex-flow: column nowrap;
     align-items: flex-end;
+    justify-content: space-between;
 }
 
 nav p {
@@ -75,11 +75,17 @@ footer {
     flex-direction: row;
     align-items: center;
     background-color: black; 
-    height: 4vh;
+    height: 50px;
 }
 
 footer p {
     color: white;
+}
+
+.menuHam {
+    height: 30px;
+    align-self: center;
+    margin-right: 20px;
 }
 
 section {
@@ -425,10 +431,79 @@ section {
 /* --------------------- Media Queries --------------------- */
 
 
-/* 
-@media screen and (max-width: 767px) { }
+ 
+@media screen and (max-width: 767px) {
+    /* Nav */
+    nav {
+        height: 75px;
+        
+    }
+    nav div {
+        display: none;
+    }
+    section {
+        margin-top: 75px;
+    }
 
-@media screen and (min-width: 768px) and (max-width: 1023px){ }
- */
+    /* Index */
+    #seguinosCelu {
+        height: 30px;
+        text-align: center;
+        font-size: 1.3rem;
+    }
 
-/* FALTA HACER MEDIA QUERIES */
+    .boxModel-video {
+        height: 70vh;
+    }
+    .boxModel-video video {
+        width: 85%;
+    }
+
+    #gridIconos {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto auto;
+        grid-template-areas: "ic1 ic2" "ic3 ic4" "ultIc ultIc";
+    }
+    #gridIconos img {
+        width: 120px;
+    }
+    #gridIconos a,
+    #gridIconos p {
+        font-size: 2.5rem;
+    }
+
+    /* Productos */
+    /* Galeria de fotos */
+    /* Quienes somos */
+    /* Contacto */
+}
+
+
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+    nav ul li {
+        font-size: 1.7rem;
+        margin: 10px 5px;
+    }
+    nav p{
+        margin-right: 20px;
+    }
+    
+    #seguinosCelu {
+        display: none;
+    }
+
+    .menuHam {
+        display: none;
+    }
+}
+
+
+@media screen and (min-width: 1023px) {
+    #seguinosCelu {
+        display: none;
+    }
+
+    .menuHam {
+        display: none;
+    }
+}
