@@ -137,8 +137,8 @@ section {
     column-gap: 3%;
     grid-template-areas: "ic1 ic2 ic3 ic4" "ultIc ultIc ultIc ultIc";
 
-    margin-top: 25px;
-    margin-bottom: 50px;
+    margin-top: 75px;
+    margin-bottom: 75px;
 }
 
 #icono1,
@@ -152,11 +152,12 @@ section {
 }
 
 #gridIconos img {
-    width: 80%;
+    width: 150px;
 }
 #gridIconos figcaption {
     font-size: 200%;
     text-align: center;
+    padding-top: 30px;
 }
 #gridIconos a,
 #gridIconos p {
@@ -180,6 +181,7 @@ section {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, 1fr);
     row-gap: 10px;
+    margin-bottom: 15px;
 }
 #gridFotosFinal img {
     width: 75%;
