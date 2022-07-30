@@ -222,7 +222,10 @@ footer p {
     border-radius: 10px;
     border: 2px solid grey;
 }
-
+.tarjeta {
+    max-width: 350px;
+    margin-bottom: 15px;
+}
 
 /* --------------------- Galeria de fotos --------------------- */
 
