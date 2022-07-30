@@ -266,7 +266,7 @@ footer p {
 #quienes1_img,
 #quienes2_img {
     border: 2px solid black;
-    width: 85%;
+    width: 500px;
     height: 300px;
 }
 #quienes1_parrafo,
@@ -367,7 +367,7 @@ footer p {
 }
 
 .botoncito:hover {
-    background-color: orangered;
+    background-color: rgb(255, 192, 74);
     color: white;
 }
 
@@ -524,16 +524,8 @@ footer p {
     
 
     /* Productos */
-    /* #gridProductos p{
-        font-size: 1.5rem;
-        text-align: center;
-    } */
-
 
     /* Contacto */
-    #gridForm {
-        margin: 50px 15%;
-    }
 }
 
 
