@@ -14,22 +14,36 @@
 
     <body>
         <header>
-            <nav>
-                <a href="../index.html"><img src="../media/LOGO.png" alt="logoEnfoco" class="logo"></a>
-                
-                <div>
-                    <p>Seguinos en las redes | <img src="../media/ig.jpg" alt="logoIG" class="ig"> @enfoco</p>
-                    <ul>
-                        <li><a href="../index.html">Inicio</a></li>
-                        <li><a href="#">Productos</a></li>
-                        <li><a href="galeria.html">Galeria de fotos</a></li>
-                        <li><a href="quienesSomos.html">Quienes somos</a></li>
-                        <li><a href="contacto.html">Contacto</a></li>
-                    </ul>
-                </div>
+            <nav class="navbar navbar-expand-md bg-white">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="../index.html"><img src="../media/LOGO.png" alt="logoEnfoco" class="logo"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
 
-                <img src="../media/menuHam.jpg" alt="menuHam" class="menuHam">
-            </nav>
+                    <p class="seguinosIG">Seguinos en las redes | <img src="../media/ig.jpg" alt="ig" class="ig"> @enfoco</p> <!-- Falta agregar href al ig -->
+
+                    <div class="collapse navbar-collapse d-lg-flex d-xl-flex flex-row align-items-end justify-content-end" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="../index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Productos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="galeria.html">Galeria de Fotos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="quienesSomos.html">Quienes Somos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contacto.html">Contacto</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+              </nav>
         </header>
 
         <section>

@@ -6,6 +6,10 @@
     font-family: "Roboto";
 }
 
+p {
+    margin-bottom: 0px;
+}
+
 html {
     font-size: 62.5%;
 }
@@ -13,60 +17,37 @@ html {
 /* ---------------- Header de todas las paginas --------------- */
 
 .logo {
-    height: 100%;
+    height: 80px;
     display: inline-block;
 }
 
 .ig {
     width: 20px;
-    position: relative;
-    top: 6px;
     margin-left: 5px;
 }
 
 nav {
-    background-color: white;
     box-shadow: 0 0 5px 0 grey;
-    top: 0;
-    width: 100%;
-    height: 90px;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
-    z-index: 100;
 }
 
-nav div {
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: flex-end;
-    justify-content: space-between;
+nav ul li {
+    margin-left: 10px;
 }
 
-nav p {
-    display: inline-block;
-    font-size: 1.5rem;
-    margin-right: 30px;
-    margin-top: 10px;
+.seguinosIG {
+    font-size: 1.3rem;
+    position: absolute;
+    top: 15px;
+    right: 12.5px;
 }
 
-nav ul {
-    list-style: none;
-    font-size: 0;
-    position: relative;
-    right: 10px;
+#navbarNav {
+    font-size: 1.7rem;
 }
 
-nav li {
-    display: inline-block;
-    padding: 5px;
-    margin: 10px 15px;
+.navbar-toggler {
+    border: none;
     font-size: 2rem;
-}
-
-nav a {
-    text-decoration: none;
-    color: black;
 }
 
 footer {
@@ -79,12 +60,6 @@ footer {
 
 footer p {
     color: white;
-}
-
-.menuHam {
-    height: 30px;
-    align-self: center;
-    margin-right: 20px;
 }
 
 
@@ -426,19 +401,14 @@ footer p {
 
 /* --------------------- Media Queries --------------------- */
 
-
- 
 @media screen and (max-width: 767px) {
     /* Nav */
-    nav {
-        height: 75px;
-        
+    .logo {
+        height: 65px;
     }
-    nav div {
+
+    .seguinosIG {
         display: none;
-    }
-    section {
-        margin-top: 75px;
     }
 
     /* Index */
@@ -446,10 +416,12 @@ footer p {
         height: 30px;
         text-align: center;
         font-size: 1.3rem;
+        position: relative;
+        top: 5px;
     }
 
     .boxModel-video {
-        height: 90vh;
+        height: 83vh;
     }
     .boxModel-video video {
         width: 85%;
@@ -544,22 +516,40 @@ footer p {
 
 @media screen and (min-width: 767px) and (max-width: 1023px) {
     /* Nav */
-    nav ul li {
-        font-size: 1.7rem;
-        margin: 10px 5px;
-    }
-    nav p{
-        margin-right: 20px;
-    }
-
-    .menuHam {
-        display: none;
+    #navbarNav {
+        height: 70px;
     }
     
     /* Index */
     #seguinosCelu {
         display: none;
     }
+
+
+    #gridFotosFinal {
+        row-gap: none;
+        align-items: flex-start;
+    }
+    #gridFotosFinal div {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-around;
+    }
+    #gridFotosFinal #fotosFinalMedio {
+        margin-top: 15px;
+        margin-bottom: 15px;
+        flex-direction: column-reverse;
+    }
+    #gridFotosFinal p {
+        font-size: 2.8rem;
+        margin-top: 15px;
+        width: 70%;
+    }
+    #gridFotosFinal img {
+        width: 100%;
+        height: 200px;
+    }
+    
 
     /* Productos */
     #gridProductos p{
@@ -576,8 +566,8 @@ footer p {
 
 @media screen and (min-width: 1023px) {
     /* Nav */
-    .menuHam {
-        display: none;
+    #navbarNav {
+        height: 70px;
     }
 
     /* Pages */
