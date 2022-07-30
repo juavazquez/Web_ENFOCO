@@ -30,19 +30,20 @@ nav {
     box-shadow: 0 0 5px 0 grey;
 }
 
+nav ul {
+    margin-right: 10px;
+}
+
 nav ul li {
     margin-left: 10px;
+    font-size: 1.7rem;
 }
 
 .seguinosIG {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     position: absolute;
     top: 15px;
-    right: 12.5px;
-}
-
-#navbarNav {
-    font-size: 1.7rem;
+    right: 22.5px;
 }
 
 .navbar-toggler {
@@ -205,55 +206,27 @@ footer p {
 
 /* --------------------- Productos --------------------- */
 
-#gridProductos {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1fr;
-    padding: 70px 3%;
+#productos {
+    margin: 40px 5%;
 }
-#gridProductos div {
-    justify-self: center;
-    border: 3px solid black;
-    width: 80%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    background-color: whitesmoke;
+
+#productos img {
+    width: 100%;
 }
-#gridProductos img {
-    width: 90%;
-    height: 60%;
-    border: 1px solid black;
+
+.card-body h5 {
+    font-size: 2rem;
 }
-#gridProductos p{
-    font-size: 1.8rem;
-    text-align: center;
+.card-body p {
+    font-size: 1.5rem;
 }
-.productos-button {
-    text-decoration: none;
-    padding: 10px 20px;
-    background-color: orange;
-    position: relative;
-    bottom: 10px;
-    border-radius: 5px;
+.card button {
+    font-size: 2rem;
     color: black;
 }
 
 
 /* --------------------- Galeria de fotos --------------------- */
-
-#gridGaleria {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    row-gap: 20px;
-    column-gap: 20px;
-    margin: 20px;
-}
-#gridGaleria img {
-    width: 100%;
-    border: 2px solid black;
-}
 
 
 /* --------------------- Quienes Somos --------------------- */
@@ -313,14 +286,28 @@ footer p {
 /* --------------------- Contacto --------------------- */
 
 /* barrita info contacto */
+#infoContacto {
+    padding: 20px 10px;
+}
 
-#gridInfoContacto {
+.info img {
+    width: 60px;
+    height: 60px;
+    padding: 5px;
+}
+.info p {
+    display: inline-block;
+    font-size: 2rem;
+    text-align: center;
+    padding: 10px
+}
+
+/* #gridInfoContacto {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     justify-content: space-evenly;
     align-items: center;
     padding: 20px 10px;
-    background-color: rgb(210, 209, 209);
     justify-items: center;
 }
 #gridInfoContacto div {
@@ -333,7 +320,6 @@ footer p {
     width: 60px;
     height: 60px;
     padding: 5px;
-    border: 3px solid black;
     background-color: white;
 }
 #gridInfoContacto p {
@@ -341,7 +327,7 @@ footer p {
     font-size: 2rem;
     text-align: center;
     padding: 10px;
-} 
+}  */
 
 /* form */
 
@@ -465,17 +451,6 @@ footer p {
     }
 
     /* Productos */
-    #gridProductos {
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(3, 1fr);
-        padding: 50px 10%;
-        row-gap: 35px;
-    }
-
-    /* Galeria de fotos */
-    #gridGaleria {
-        grid-template-columns: repeat(2, 1fr);
-    }
 
     /* Quienes somos */
     #gridQuienes {
@@ -495,6 +470,17 @@ footer p {
     }
 
     /* Contacto */
+    .info {
+        margin-left: 6px;
+    }
+    .info p {
+        font-size: 1.7rem;
+    }
+    .info img {
+        height: 50px;
+        width: 50px;
+    }
+
     #gridInfoContacto div {
         flex-direction: column;
         align-items: center;
@@ -506,7 +492,7 @@ footer p {
     #gridForm {
         display: flex;
         flex-direction: column;
-        margin: 50px 10%;
+        margin: 0 20px 50px 20px;
     }
     #enviarButton {
         align-self: center;
@@ -552,10 +538,11 @@ footer p {
     
 
     /* Productos */
-    #gridProductos p{
+    /* #gridProductos p{
         font-size: 1.5rem;
         text-align: center;
-    }
+    } */
+
 
     /* Contacto */
     #gridForm {

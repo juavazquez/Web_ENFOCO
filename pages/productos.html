@@ -51,23 +51,38 @@
                 <p>PRODUCTOS</p>
             </article>
 
-            <article id="gridProductos">
-                <div>
-                    <img src="../media/producto.jpg" alt="">
-                    <p>Producto 1 <br> $999999</p>
-                    <a href="" class="productos-button"><p>Comprar</p></a>
-                </div>
-
-                <div>
-                    <img src="../media/producto.jpg" alt="">
-                    <p>Producto 2 <br> $999999</p>
-                    <a href="" class="productos-button"><p>Comprar</p></a>
-                </div>
-
-                <div>
-                    <img src="../media/producto.jpg" alt="">
-                    <p>Producto 3 <br> $999999</p>
-                    <a href="" class="productos-button"><p>Comprar</p></a>
+            <article id="productos">
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                    <div class="col">
+                      <div class="card h-100 border-dark mx-3 my-2">
+                        <img src="../media/producto.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Producto 1</h5>
+                          <p class="card-text">$99999</p>
+                        </div>
+                        <button class="btn btn-outline-secondary" type="button">Comprar</button>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card h-100 border-dark mx-3 my-2">
+                        <img src="../media/producto.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Producto 2</h5>
+                            <p class="card-text">$99999</p>
+                        </div>
+                        <button class="btn btn-outline-secondary" type="button">Comprar</button>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card h-100 border-dark mx-3 my-2 d-flex">
+                        <img src="../media/producto.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Producto 3</h5>
+                            <p class="card-text">$99999</p>
+                        </div>
+                        <button class="btn btn-outline-secondary" type="button">Comprar</button>
+                      </div>
+                    </div>
                 </div>
             </article>
         </section>
