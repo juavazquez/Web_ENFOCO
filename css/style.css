@@ -82,6 +82,7 @@ footer p {
 
 .boxModel-video video {
     width: 70%;
+    max-width: 1000px;
 }
 
 
@@ -157,7 +158,6 @@ footer p {
 }
 #gridFotosFinal img {
     width: 75%;
-    height: 400px;
 }
 #gridFotosFinal p {
     display: inline-block;
@@ -266,8 +266,7 @@ footer p {
 #quienes1_img,
 #quienes2_img {
     border: 2px solid black;
-    width: 500px;
-    height: 300px;
+    width: 100%;
 }
 #quienes1_parrafo,
 #quienes2_parrafo {
@@ -393,7 +392,7 @@ footer p {
     }
 
     .boxModel-video {
-        height: 83vh;
+        height: 87vh;
     }
     .boxModel-video video {
         width: 85%;
