@@ -302,33 +302,6 @@ footer p {
     padding: 10px
 }
 
-/* #gridInfoContacto {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    justify-content: space-evenly;
-    align-items: center;
-    padding: 20px 10px;
-    justify-items: center;
-}
-#gridInfoContacto div {
-    height: 100px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-#gridInfoContacto img {
-    width: 60px;
-    height: 60px;
-    padding: 5px;
-    background-color: white;
-}
-#gridInfoContacto p {
-    display: inline-block;
-    font-size: 2rem;
-    text-align: center;
-    padding: 10px;
-}  */
-
 /* form */
 
 #nombre {
