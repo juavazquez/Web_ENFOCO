@@ -421,46 +421,53 @@ footer {
 
     .boxModel-video {
         height: 87vh;
-    }
-    .boxModel-video video {
-        width: 85%;
-    }
 
+        video {
+            width: 85%;
+        }
+    }
+    
     #gridIconos {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: auto auto auto;
         grid-template-areas: "ic1 ic2" "ic3 ic4" "ultIc ultIc";
-    }
-    #gridIconos img {
-        width: 120px;
-    }
-    #gridIconos a,
-    #gridIconos p {
-        font-size: 2.5rem;
+
+        img {
+            width: 120px;
+        }
+
+        a,
+        p {
+            font-size: 2.5rem;
+        }
     }
 
     #gridFotosFinal {
         row-gap: none;
         align-items: flex-start;
-    }
-    #gridFotosFinal div {
-        display: flex;
-        flex-flow: column nowrap;
-        justify-content: space-around;
-    }
-    #gridFotosFinal #fotosFinalMedio {
-        margin-top: 15px;
-        margin-bottom: 15px;
-        flex-direction: column-reverse;
-    }
-    #gridFotosFinal p {
-        font-size: 2.8rem;
-        margin-top: 15px;
-        width: 70%;
-    }
-    #gridFotosFinal img {
-        width: 100%;
-        height: 200px;
+
+        div {
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: space-around;
+        }
+
+        #fotosFinalMedio {
+            margin-top: 15px;
+            margin-bottom: 15px;
+            flex-direction: column-reverse;
+        }
+
+        p {
+            font-size: 2.8rem;
+            margin-top: 15px;
+            width: 70%;
+        }
+
+        img {
+            width: 100%;
+            height: 200px;
+        }
     }
 
     /* Productos */
@@ -485,28 +492,34 @@ footer {
     /* Contacto */
     .info {
         margin-left: 6px;
-    }
-    .info p {
-        font-size: 1.7rem;
-    }
-    .info img {
-        height: 50px;
-        width: 50px;
-    }
 
-    #gridInfoContacto div {
-        flex-direction: column;
-        align-items: center;
-    }
-    #gridInfoContacto p {
-        font-size: 1.5rem;
-    } 
+        p {
+            font-size: 1.7rem;
+        }
 
+        img {
+            height: 50px;
+            width: 50px;
+        }
+    }    
+
+    #gridInfoContacto {
+        div {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        p {
+            font-size: 1.5rem;
+        } 
+    }
+    
     #gridForm {
         display: flex;
         flex-direction: column;
         margin: 0 20px 50px 20px;
     }
+    
     #enviarButton {
         align-self: center;
     }
