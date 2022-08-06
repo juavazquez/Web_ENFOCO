@@ -193,42 +193,50 @@ footer {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+
+    p {
+        display: inline-block;
+        padding: 20px;
+        font-size: 2.5rem;
+        font-weight: 600;
+        /* border: 3px solid black; */
+        background-color: rgba(200, 66, 39, 0.783);
+        margin: auto;
+    }
 }
 
-.foto-comun-pages p {
-    display: inline-block;
-    padding: 20px;
-    font-size: 2.5rem;
-    font-weight: 600;
-    /* border: 3px solid black; */
-    background-color: rgba(200, 66, 39, 0.783);
-    margin: auto;
-}
+
 
 /* --------------------- Productos --------------------- */
 
 #productos {
     margin: 40px 5%;
+
+    img {
+        width: 100%;
+    }
 }
 
-#productos img {
-    width: 100%;
+.card-body {
+    h5 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 1.5rem;
+    }
 }
 
-.card-body h5 {
-    font-size: 2rem;
-}
-.card-body p {
-    font-size: 1.5rem;
-}
-.card button {
-    font-size: 2rem;
-}
 .card {
     padding: 10px;
     border-radius: 10px;
     border: 2px solid grey;
+
+    button {
+        font-size: 2rem;
+    }
 }
+
 .tarjeta {
     max-width: 350px;
     margin-bottom: 15px;

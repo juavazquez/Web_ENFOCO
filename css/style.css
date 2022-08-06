@@ -177,7 +177,6 @@ footer p {
   background-size: cover;
   background-position: center;
 }
-
 .foto-comun-pages p {
   display: inline-block;
   padding: 20px;
@@ -192,7 +191,6 @@ footer p {
 #productos {
   margin: 40px 5%;
 }
-
 #productos img {
   width: 100%;
 }
@@ -200,19 +198,17 @@ footer p {
 .card-body h5 {
   font-size: 2rem;
 }
-
 .card-body p {
   font-size: 1.5rem;
-}
-
-.card button {
-  font-size: 2rem;
 }
 
 .card {
   padding: 10px;
   border-radius: 10px;
   border: 2px solid grey;
+}
+.card button {
+  font-size: 2rem;
 }
 
 .tarjeta {
