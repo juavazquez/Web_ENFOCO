@@ -27,11 +27,9 @@ html {
 nav {
   box-shadow: 0 0 5px 0 grey;
 }
-
 nav ul {
   margin-right: 10px;
 }
-
 nav ul li {
   margin-left: 10px;
   font-size: 1.7rem;
@@ -56,7 +54,6 @@ footer {
   background-color: black;
   height: 50px;
 }
-
 footer p {
   color: white;
 }
@@ -74,7 +71,6 @@ footer p {
   background-repeat: no-repeat;
   background-size: cover;
 }
-
 .boxModel-video video {
   width: 70%;
   max-width: 1000px;
@@ -116,6 +112,24 @@ footer p {
   margin-top: 75px;
   margin-bottom: 75px;
 }
+#gridIconos img {
+  width: 150px;
+}
+#gridIconos figcaption {
+  font-size: 200%;
+  text-align: center;
+  padding-top: 30px;
+}
+#gridIconos a,
+#gridIconos p {
+  text-align: center;
+  font-size: 3rem;
+}
+#gridIconos a {
+  margin-top: 10px;
+  font-size: 2.5rem;
+  padding: 5px 20px;
+}
 
 #icono1,
 #icono2,
@@ -127,28 +141,6 @@ footer p {
   align-items: center;
 }
 
-#gridIconos img {
-  width: 150px;
-}
-
-#gridIconos figcaption {
-  font-size: 200%;
-  text-align: center;
-  padding-top: 30px;
-}
-
-#gridIconos a,
-#gridIconos p {
-  text-align: center;
-  font-size: 3rem;
-}
-
-#gridIconos a {
-  margin-top: 10px;
-  font-size: 2.5rem;
-  padding: 5px 20px;
-}
-
 /* Fotos del final */
 #gridFotosFinal {
   display: grid;
@@ -157,18 +149,15 @@ footer p {
   row-gap: 10px;
   margin-bottom: 15px;
 }
-
 #gridFotosFinal img {
   width: 75%;
 }
-
 #gridFotosFinal p {
   display: inline-block;
   text-align: center;
   font-size: 4rem;
   width: 25%;
 }
-
 #gridFotosFinal div {
   display: flex;
   flex-flow: row nowrap;
