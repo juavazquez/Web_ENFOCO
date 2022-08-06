@@ -288,7 +288,6 @@ footer p {
   height: 60px;
   padding: 5px;
 }
-
 .info p {
   display: inline-block;
   font-size: 2rem;
@@ -331,31 +330,26 @@ footer p {
   grid-template-areas: "nombre apellido" "email telefono" "mensaje mensaje" "enviar enviar";
   margin: 50px 25%;
 }
-
 #gridForm input,
 #gridForm textarea {
   width: 100%;
 }
-
 #gridForm input {
   height: 30px;
 }
-
 #gridForm textarea {
   resize: none;
+}
+#gridForm label {
+  font-size: 1.75rem;
 }
 
 #enviarButton {
   justify-self: center;
 }
-
 #enviarButton button {
   font-size: 2rem;
   color: black;
-}
-
-#gridForm label {
-  font-size: 1.75rem;
 }
 
 #campoObligatorio {
