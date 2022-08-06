@@ -34,6 +34,16 @@ nav ul li {
   margin-left: 10px;
   font-size: 1.7rem;
 }
+nav ul li a {
+  padding-bottom: 5px;
+  margin: 5px;
+  text-decoration: none;
+  color: black;
+}
+nav ul li a:hover {
+  color: darkorange;
+  border-bottom: 2px solid orange;
+}
 
 .seguinosIG {
   font-size: 1.5rem;

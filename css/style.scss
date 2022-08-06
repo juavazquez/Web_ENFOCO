@@ -36,6 +36,18 @@ nav {
         li {
             margin-left: 10px;
             font-size: 1.7rem;
+            
+            a {
+                padding-bottom: 5px;
+                margin: 5px;
+                text-decoration: none;
+                color: black;
+
+                &:hover {
+                    color: darkorange;
+                    border-bottom: 2px solid orange;
+                }
+            }
         }
     }
 }
