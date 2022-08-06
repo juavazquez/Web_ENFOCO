@@ -390,12 +390,13 @@ footer {
     border: none;
     border-radius: 5px;
     color: white;
+
+    &:hover {
+        background-color: rgb(255, 192, 74);
+        color: white;
+    }
 }
 
-.botoncito:hover {
-    background-color: rgb(255, 192, 74);
-    color: white;
-}
 
 /* --------------------- Media Queries --------------------- */
 
