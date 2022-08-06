@@ -1,0 +1,49 @@
+#quienes1_titulo {
+    grid-area: titulo1;
+}
+#quienes1_parrafo {
+    grid-area: parrafo1;
+    margin-bottom: 50px;
+}
+#quienes1_img {
+    grid-area: img1;
+    margin-bottom: 50px;
+    justify-self: flex-end;
+}
+#quienesVacio {
+    grid-area: vacio;
+}
+#quienes2_titulo {
+    grid-area: titulo2;
+}
+#quienes2_parrafo {
+    grid-area: parrafo2;
+}
+#quienes2_img {
+    grid-area: img2;
+
+}
+#gridQuienes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas: "titulo1 titulo1" "parrafo1 img1" "vacio titulo2" "img2 parrafo2";
+    column-gap: 5%;
+    margin: 5%;
+}
+
+#quienes1_img,
+#quienes2_img {
+    border: 2px solid black;
+    width: 100%;
+}
+#quienes1_parrafo,
+#quienes2_parrafo {
+    font-size: $letraTam1;
+    text-align: justify;
+}
+#quienes1_titulo,
+#quienes2_titulo {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}

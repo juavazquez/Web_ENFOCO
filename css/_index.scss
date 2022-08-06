@@ -1,0 +1,111 @@
+/* Video de inicio */
+.boxModel-video {
+    height: 91vh;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+
+    background-image: url(../media/fondoVideo.jpg);
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    video {
+        width: 70%;
+        max-width: 1000px;
+    }
+}
+
+
+/* Iconos */
+#icono1 {
+    grid-area: ic1;
+}
+#icono2 {
+    grid-area: ic2;
+}
+#icono3 {
+    grid-area: ic3;
+}
+#icono4 {
+    grid-area: ic4;
+}
+#ultimaFilaIconos {
+    grid-area: ultIc;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#gridIconos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto auto;
+    row-gap: 50px;
+    column-gap: 3%;
+    grid-template-areas: "ic1 ic2 ic3 ic4" "ultIc ultIc ultIc ultIc";
+
+    margin-top: 75px;
+    margin-bottom: 75px;
+
+    img {
+        width: 150px;
+    }
+
+    figcaption {
+        font-size: 200%;
+        text-align: center;
+        padding-top: 30px;
+    }
+
+    a,
+    p {
+        text-align: center;
+        font-size: 3rem;
+    }
+
+    a {
+        margin-top: 10px;
+        font-size: 2.5rem;
+        padding: 5px 20px;
+    }
+}
+
+#icono1,
+#icono2,
+#icono3,
+#icono4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+/* Fotos del final */
+#gridFotosFinal {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, auto);
+    row-gap: 10px;
+    margin-bottom: 15px;
+
+    img {
+        width: 75%;
+    }
+
+    p {
+        display: inline-block;
+        text-align: center;
+        font-size: 4rem;
+        width: 25%;
+    }
+
+    div {
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+    }
+}

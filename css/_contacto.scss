@@ -1,0 +1,80 @@
+/* barrita info contacto */
+#infoContacto {
+    padding: 20px 10px;
+}
+
+.info {
+    img {
+        width: 60px;
+        height: 60px;
+        padding: 5px;
+    }
+
+    p {
+        display: inline-block;
+        font-size: $letraTam1;
+        text-align: center;
+        padding: 10px
+    }
+}
+
+/* form */
+
+#nombre {
+    grid-area: nombre;
+}
+#apellido {
+    grid-area: apellido;
+}
+#email {
+    grid-area: email;
+}
+#telefono {
+    grid-area: telefono;
+}
+#mensaje {
+    grid-area: mensaje;
+}
+#enviarButton {
+    grid-area: enviar;
+}
+#gridForm {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4, auto);
+    column-gap: 5%;
+    row-gap: 10px;
+    grid-template-areas: "nombre apellido" "email telefono" "mensaje mensaje" "enviar enviar";
+
+    margin: 50px 25%;
+
+    input,
+    textarea {
+        width: 100%;
+    }
+
+    input {
+        height: 30px;
+    }
+
+    textarea {
+        resize: none;
+    }
+
+    label {
+        font-size: 1.75rem;
+    }
+}
+
+#enviarButton {
+    justify-self: center;
+
+    button {
+        font-size: $letraTam1;
+        color: black;
+    }
+}
+
+#campoObligatorio {
+    font-size: 1.3rem;
+}

@@ -1,0 +1,32 @@
+#productos {
+    margin: 40px 5%;
+
+    img {
+        width: 100%;
+    }
+}
+
+.card-body {
+    h5 {
+        font-size: $letraTam1;
+    }
+
+    p {
+        font-size: $letraTam2;
+    }
+}
+
+.card {
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid grey;
+
+    button {
+        font-size: $letraTam1;
+    }
+}
+
+.tarjeta {
+    max-width: 350px;
+    margin-bottom: 15px;
+}
