@@ -30,7 +30,7 @@
         }
     }
     
-    #gridIconos {
+    .gridIconos {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: auto auto auto;
         grid-template-areas: "ic1 ic2" "ic3 ic4" "ultIc ultIc";
@@ -45,7 +45,7 @@
         }
     }
 
-    #gridFotosFinal {
+    .gridFotosFinal {
         row-gap: none;
         align-items: flex-start;
 
@@ -106,7 +106,7 @@
         }
     }    
 
-    #gridInfoContacto {
+    .gridInfoContacto {
         div {
             flex-direction: column;
             align-items: center;
@@ -117,13 +117,13 @@
         } 
     }
     
-    #gridForm {
+    .gridForm {
         display: flex;
         flex-direction: column;
         margin: 0 20px 50px 20px;
     }
 
-    #enviarButton {
+    .enviarButton {
         align-self: center;
     }
 }
@@ -140,7 +140,7 @@
         display: none;
     }
 
-    #gridFotosFinal {
+    .gridFotosFinal {
         row-gap: none;
         align-items: flex-start;
 

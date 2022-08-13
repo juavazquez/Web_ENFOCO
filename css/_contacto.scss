@@ -1,44 +1,50 @@
 /* barrita info contacto */
-#infoContacto {
+.infoContacto {
     padding: 20px 10px;
+
+    .info {
+        img {
+            width: 60px;
+            height: 60px;
+            padding: 5px;
+        }
+    
+        p {
+            display: inline-block;
+            font-size: $letraTam1;
+            text-align: center;
+            padding: 10px
+        }
+    }
 }
 
-.info {
-    img {
-        width: 60px;
-        height: 60px;
-        padding: 5px;
-    }
 
-    p {
-        display: inline-block;
-        font-size: $letraTam1;
-        text-align: center;
-        padding: 10px
-    }
-}
 
 /* form */
 
-#nombre {
+.nombre {
     grid-area: nombre;
 }
-#apellido {
+.apellido {
     grid-area: apellido;
 }
-#email {
+.email {
     grid-area: email;
 }
-#telefono {
+.telefono {
     grid-area: telefono;
 }
-#mensaje {
+.mensaje {
     grid-area: mensaje;
+
+    .campoObligatorio {
+        font-size: 1.3rem;
+    }
 }
-#enviarButton {
+.enviarButton {
     grid-area: enviar;
 }
-#gridForm {
+.gridForm {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(4, auto);
@@ -66,14 +72,10 @@
     }
 }
 
-#enviarButton {
+.enviarButton {
     justify-self: center;
 
     button {
         font-size: $letraTam1;
     }
-}
-
-#campoObligatorio {
-    font-size: 1.3rem;
 }

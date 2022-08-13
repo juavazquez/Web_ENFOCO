@@ -87,23 +87,23 @@ footer p {
 }
 
 /* Iconos */
-#icono1 {
+.icono1 {
   grid-area: ic1;
 }
 
-#icono2 {
+.icono2 {
   grid-area: ic2;
 }
 
-#icono3 {
+.icono3 {
   grid-area: ic3;
 }
 
-#icono4 {
+.icono4 {
   grid-area: ic4;
 }
 
-#ultimaFilaIconos {
+.ultimaFilaIconos {
   grid-area: ultIc;
   display: flex;
   flex-direction: column;
@@ -111,7 +111,7 @@ footer p {
   align-items: center;
 }
 
-#gridIconos {
+.gridIconos {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: auto auto;
@@ -122,29 +122,29 @@ footer p {
   margin-top: 75px;
   margin-bottom: 75px;
 }
-#gridIconos img {
+.gridIconos img {
   width: 150px;
 }
-#gridIconos figcaption {
+.gridIconos figcaption {
   font-size: 200%;
   text-align: center;
   padding-top: 30px;
 }
-#gridIconos a,
-#gridIconos p {
+.gridIconos a,
+.gridIconos p {
   text-align: center;
   font-size: 3rem;
 }
-#gridIconos a {
+.gridIconos a {
   margin-top: 10px;
   font-size: 2.5rem;
   padding: 5px 20px;
 }
 
-#icono1,
-#icono2,
-#icono3,
-#icono4 {
+.icono1,
+.icono2,
+.icono3,
+.icono4 {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -152,23 +152,23 @@ footer p {
 }
 
 /* Fotos del final */
-#gridFotosFinal {
+.gridFotosFinal {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(3, auto);
   row-gap: 10px;
   margin-bottom: 15px;
 }
-#gridFotosFinal img {
+.gridFotosFinal img {
   width: 75%;
 }
-#gridFotosFinal p {
+.gridFotosFinal p {
   display: inline-block;
   text-align: center;
   font-size: 4rem;
   width: 25%;
 }
-#gridFotosFinal div {
+.gridFotosFinal div {
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
@@ -291,16 +291,15 @@ footer p {
 
 /* --------------------- Contacto --------------------- */
 /* barrita info contacto */
-#infoContacto {
+.infoContacto {
   padding: 20px 10px;
 }
-
-.info img {
+.infoContacto .info img {
   width: 60px;
   height: 60px;
   padding: 5px;
 }
-.info p {
+.infoContacto .info p {
   display: inline-block;
   font-size: 2rem;
   text-align: center;
@@ -308,31 +307,34 @@ footer p {
 }
 
 /* form */
-#nombre {
+.nombre {
   grid-area: nombre;
 }
 
-#apellido {
+.apellido {
   grid-area: apellido;
 }
 
-#email {
+.email {
   grid-area: email;
 }
 
-#telefono {
+.telefono {
   grid-area: telefono;
 }
 
-#mensaje {
+.mensaje {
   grid-area: mensaje;
 }
+.mensaje .campoObligatorio {
+  font-size: 1.3rem;
+}
 
-#enviarButton {
+.enviarButton {
   grid-area: enviar;
 }
 
-#gridForm {
+.gridForm {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: repeat(4, auto);
@@ -342,29 +344,25 @@ footer p {
   grid-template-areas: "nombre apellido" "email telefono" "mensaje mensaje" "enviar enviar";
   margin: 50px 25%;
 }
-#gridForm input,
-#gridForm textarea {
+.gridForm input,
+.gridForm textarea {
   width: 100%;
 }
-#gridForm input {
+.gridForm input {
   height: 30px;
 }
-#gridForm textarea {
+.gridForm textarea {
   resize: none;
 }
-#gridForm label {
+.gridForm label {
   font-size: 1.75rem;
 }
 
-#enviarButton {
+.enviarButton {
   justify-self: center;
 }
-#enviarButton button {
+.enviarButton button {
   font-size: 2rem;
-}
-
-#campoObligatorio {
-  font-size: 1.3rem;
 }
 
 /* ----- Boton naranja ----- */
@@ -408,38 +406,38 @@ footer p {
   .boxModel-video video {
     width: 85%;
   }
-  #gridIconos {
+  .gridIconos {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto auto;
     grid-template-areas: "ic1 ic2" "ic3 ic4" "ultIc ultIc";
   }
-  #gridIconos img {
+  .gridIconos img {
     width: 120px;
   }
-  #gridIconos a,
-#gridIconos p {
+  .gridIconos a,
+.gridIconos p {
     font-size: 2.5rem;
   }
-  #gridFotosFinal {
+  .gridFotosFinal {
     row-gap: none;
     align-items: flex-start;
   }
-  #gridFotosFinal div {
+  .gridFotosFinal div {
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-around;
   }
-  #gridFotosFinal #fotosFinalMedio {
+  .gridFotosFinal #fotosFinalMedio {
     margin-top: 15px;
     margin-bottom: 15px;
     flex-direction: column-reverse;
   }
-  #gridFotosFinal p {
+  .gridFotosFinal p {
     font-size: 2.8rem;
     margin-top: 15px;
     width: 70%;
   }
-  #gridFotosFinal img {
+  .gridFotosFinal img {
     width: 100%;
     height: 200px;
   }
@@ -470,19 +468,19 @@ footer p {
     height: 50px;
     width: 50px;
   }
-  #gridInfoContacto div {
+  .gridInfoContacto div {
     flex-direction: column;
     align-items: center;
   }
-  #gridInfoContacto p {
+  .gridInfoContacto p {
     font-size: 1.5rem;
   }
-  #gridForm {
+  .gridForm {
     display: flex;
     flex-direction: column;
     margin: 0 20px 50px 20px;
   }
-  #enviarButton {
+  .enviarButton {
     align-self: center;
   }
 }
@@ -495,26 +493,26 @@ footer p {
   #seguinosCelu {
     display: none;
   }
-  #gridFotosFinal {
+  .gridFotosFinal {
     row-gap: none;
     align-items: flex-start;
   }
-  #gridFotosFinal div {
+  .gridFotosFinal div {
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-around;
   }
-  #gridFotosFinal #fotosFinalMedio {
+  .gridFotosFinal #fotosFinalMedio {
     margin-top: 15px;
     margin-bottom: 15px;
     flex-direction: column-reverse;
   }
-  #gridFotosFinal p {
+  .gridFotosFinal p {
     font-size: 2.8rem;
     margin-top: 15px;
     width: 70%;
   }
-  #gridFotosFinal img {
+  .gridFotosFinal img {
     width: 100%;
     height: 200px;
   }

@@ -19,19 +19,19 @@
 
 
 /* Iconos */
-#icono1 {
+.icono1 {
     grid-area: ic1;
 }
-#icono2 {
+.icono2 {
     grid-area: ic2;
 }
-#icono3 {
+.icono3 {
     grid-area: ic3;
 }
-#icono4 {
+.icono4 {
     grid-area: ic4;
 }
-#ultimaFilaIconos {
+.ultimaFilaIconos {
     grid-area: ultIc;
 
     display: flex;
@@ -39,7 +39,7 @@
     justify-content: center;
     align-items: center;
 }
-#gridIconos {
+.gridIconos {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: auto auto;
@@ -73,10 +73,10 @@
     }
 }
 
-#icono1,
-#icono2,
-#icono3,
-#icono4 {
+.icono1,
+.icono2,
+.icono3,
+.icono4 {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -85,7 +85,7 @@
 
 
 /* Fotos del final */
-#gridFotosFinal {
+.gridFotosFinal {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, auto);
