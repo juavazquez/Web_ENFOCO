@@ -7,8 +7,6 @@
 }
 #quienes1_img {
     grid-area: img1;
-    margin-bottom: 50px;
-    justify-self: flex-end;
 }
 #quienesVacio {
     grid-area: vacio;
@@ -32,10 +30,17 @@
     margin: 5%;
 }
 
-#quienes1_img,
-#quienes2_img {
-    border: 2px solid black;
+.base-img-quienes {
+    @include styleBorder(2px, solid, black, 0);
     width: 100%;
+}
+#quienes1_img {
+    @extend .base-img-quienes;
+    margin-bottom: 50px;
+    justify-self: flex-end;
+}
+#quienes2_img {
+    @extend .base-img-quienes;
 }
 #quienes1_parrafo,
 #quienes2_parrafo {

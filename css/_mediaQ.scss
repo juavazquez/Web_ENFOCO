@@ -1,6 +1,10 @@
 // ------------------------ Celular ------------------------ 
 @media screen and (max-width: 767px) {
     /* Nav */
+    nav ul li a:hover {
+        display: none;
+    }
+
     .logo {
         height: 65px;
     }

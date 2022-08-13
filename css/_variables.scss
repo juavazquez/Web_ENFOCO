@@ -1,4 +1,9 @@
 // doble del tamaño normal (algunos titulos/botones)
 $letraTam1: 2rem;
 // uno y medio del tamaño normal (algunos subtitulos/demas)
-$letraTam2: 1.5rem
+$letraTam2: 1.5rem;
+
+@mixin styleBorder($tipoBorde, $anchoBorde, $colorBorde, $radioBorde) {
+    border: $anchoBorde $tipoBorde $colorBorde;
+    border-radius: $radioBorde;
+}

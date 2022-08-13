@@ -214,8 +214,8 @@ footer p {
 
 .card {
   padding: 10px;
+  border: solid 2px grey;
   border-radius: 10px;
-  border: 2px solid grey;
 }
 .card button {
   font-size: 2rem;
@@ -238,8 +238,6 @@ footer p {
 
 #quienes1_img {
   grid-area: img1;
-  margin-bottom: 50px;
-  justify-self: flex-end;
 }
 
 #quienesVacio {
@@ -268,10 +266,15 @@ footer p {
   margin: 5%;
 }
 
-#quienes1_img,
-#quienes2_img {
-  border: 2px solid black;
+.base-img-quienes, #quienes2_img, #quienes1_img {
+  border: solid 2px black;
+  border-radius: 0;
   width: 100%;
+}
+
+#quienes1_img {
+  margin-bottom: 50px;
+  justify-self: flex-end;
 }
 
 #quienes1_parrafo,
@@ -382,6 +385,9 @@ footer p {
 /* --------------------- Media Queries --------------------- */
 @media screen and (max-width: 767px) {
   /* Nav */
+  nav ul li a:hover {
+    display: none;
+  }
   .logo {
     height: 65px;
   }

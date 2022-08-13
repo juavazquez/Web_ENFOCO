@@ -117,18 +117,20 @@ footer {
 @import "contacto";
 
 /* ----- Boton naranja ----- */
+$botoncitoMap: (bgColor: orange, padding: 5px 10px, borde: none, radioBorde: 5px, colorLetra: white, bgColorHover: rgb(255, 192, 74), colorLHover: white);
+
 .botoncito {
     text-decoration: none;
-    background-color: orange;
+    background-color: map-get($botoncitoMap, bgColor);
     transition: 0.25s;
-    padding: 5px 10px;
-    border: none;
-    border-radius: 5px;
-    color: white;
+    padding: map-get($botoncitoMap, padding);
+    border: map-get($botoncitoMap, borde);
+    border-radius: map-get($botoncitoMap, radioBorde);
+    color: map-get($botoncitoMap, colorLetra);
 
     &:hover {
-        background-color: rgb(255, 192, 74);
-        color: white;
+        background-color: map-get($botoncitoMap, bgColorHover);
+        color: map-get($botoncitoMap, colorLHover);
     }
 }
 

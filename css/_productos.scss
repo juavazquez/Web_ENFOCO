@@ -18,8 +18,7 @@
 
 .card {
     padding: 10px;
-    border-radius: 10px;
-    border: 2px solid grey;
+    @include styleBorder(2px, solid, grey, 10px);
 
     button {
         font-size: $letraTam1;
