@@ -2,7 +2,7 @@
 @media screen and (max-width: 767px) {
     /* Nav */
     nav ul li a:hover {
-        display: none;
+        border: none;
     }
 
     .logo {
@@ -14,7 +14,7 @@
     }
 
     /* Index */
-    #seguinosCelu {
+    .seguinosCelu {
         height: 30px;
         text-align: center;
         font-size: 1.3rem;
@@ -55,7 +55,7 @@
             justify-content: space-around;
         }
 
-        #fotosFinalMedio {
+        .fotosFinalMedio {
             margin-top: 15px;
             margin-bottom: 15px;
             flex-direction: column-reverse;
@@ -76,18 +76,18 @@
     /* Productos */
 
     /* Quienes somos */
-    #gridQuienes {
+    .gridQuienes {
         display: flex;
         flex-direction: column;
         margin: 30px;
 
     }
-    #quienes1_img,
-    #quienes2_img {
+    .quienes1_img,
+    .quienes2_img {
         width: 100%;
     }
-    #quienes1_parrafo,
-    #quienes2_parrafo {
+    .quienes1_parrafo,
+    .quienes2_parrafo {
         margin-bottom: 50px;
         font-size: 1.7rem;
     }
@@ -136,7 +136,7 @@
     }
     
     /* Index */
-    #seguinosCelu {
+    .seguinosCelu {
         display: none;
     }
 
@@ -150,7 +150,7 @@
             justify-content: space-around;
         }
 
-        #fotosFinalMedio {
+        .fotosFinalMedio {
             margin-top: 15px;
             margin-bottom: 15px;
             flex-direction: column-reverse;
@@ -177,7 +177,7 @@
     }
 
     /* Pages */
-    #seguinosCelu {
+    .seguinosCelu {
         display: none;
     }
 }

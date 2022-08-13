@@ -198,10 +198,10 @@ footer p {
 }
 
 /* --------------------- Productos --------------------- */
-#productos {
+.productos {
   margin: 40px 5%;
 }
-#productos img {
+.productos img {
   width: 100%;
 }
 
@@ -227,36 +227,36 @@ footer p {
 }
 
 /* --------------------- Quienes Somos --------------------- */
-#quienes1_titulo {
+.quienes1_titulo {
   grid-area: titulo1;
 }
 
-#quienes1_parrafo {
+.quienes1_parrafo {
   grid-area: parrafo1;
   margin-bottom: 50px;
 }
 
-#quienes1_img {
+.quienes1_img {
   grid-area: img1;
 }
 
-#quienesVacio {
+.quienesVacio {
   grid-area: vacio;
 }
 
-#quienes2_titulo {
+.quienes2_titulo {
   grid-area: titulo2;
 }
 
-#quienes2_parrafo {
+.quienes2_parrafo {
   grid-area: parrafo2;
 }
 
-#quienes2_img {
+.quienes2_img {
   grid-area: img2;
 }
 
-#gridQuienes {
+.gridQuienes {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: repeat(4, auto);
@@ -266,25 +266,25 @@ footer p {
   margin: 5%;
 }
 
-.base-img-quienes, #quienes2_img, #quienes1_img {
+.base-img-quienes, .quienes2_img, .quienes1_img {
   border: solid 2px black;
   border-radius: 0;
   width: 100%;
 }
 
-#quienes1_img {
+.quienes1_img {
   margin-bottom: 50px;
   justify-self: flex-end;
 }
 
-#quienes1_parrafo,
-#quienes2_parrafo {
+.quienes1_parrafo,
+.quienes2_parrafo {
   font-size: 2rem;
   text-align: justify;
 }
 
-#quienes1_titulo,
-#quienes2_titulo {
+.quienes1_titulo,
+.quienes2_titulo {
   font-size: 3rem;
   margin-bottom: 15px;
 }
@@ -384,7 +384,7 @@ footer p {
 @media screen and (max-width: 767px) {
   /* Nav */
   nav ul li a:hover {
-    display: none;
+    border: none;
   }
   .logo {
     height: 65px;
@@ -393,7 +393,7 @@ footer p {
     display: none;
   }
   /* Index */
-  #seguinosCelu {
+  .seguinosCelu {
     height: 30px;
     text-align: center;
     font-size: 1.3rem;
@@ -427,7 +427,7 @@ footer p {
     flex-flow: column nowrap;
     justify-content: space-around;
   }
-  .gridFotosFinal #fotosFinalMedio {
+  .gridFotosFinal .fotosFinalMedio {
     margin-top: 15px;
     margin-bottom: 15px;
     flex-direction: column-reverse;
@@ -443,17 +443,17 @@ footer p {
   }
   /* Productos */
   /* Quienes somos */
-  #gridQuienes {
+  .gridQuienes {
     display: flex;
     flex-direction: column;
     margin: 30px;
   }
-  #quienes1_img,
-#quienes2_img {
+  .quienes1_img,
+.quienes2_img {
     width: 100%;
   }
-  #quienes1_parrafo,
-#quienes2_parrafo {
+  .quienes1_parrafo,
+.quienes2_parrafo {
     margin-bottom: 50px;
     font-size: 1.7rem;
   }
@@ -490,7 +490,7 @@ footer p {
     height: 70px;
   }
   /* Index */
-  #seguinosCelu {
+  .seguinosCelu {
     display: none;
   }
   .gridFotosFinal {
@@ -502,7 +502,7 @@ footer p {
     flex-flow: column nowrap;
     justify-content: space-around;
   }
-  .gridFotosFinal #fotosFinalMedio {
+  .gridFotosFinal .fotosFinalMedio {
     margin-top: 15px;
     margin-bottom: 15px;
     flex-direction: column-reverse;
@@ -523,7 +523,7 @@ footer p {
     height: 70px;
   }
   /* Pages */
-  #seguinosCelu {
+  .seguinosCelu {
     display: none;
   }
 }
