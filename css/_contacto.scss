@@ -61,10 +61,14 @@
 
     input {
         height: 30px;
+        font-size: $letraTam2;
+        padding-left: 2%;
     }
 
     textarea {
         resize: none;
+        font-size: $letraTam2;
+        padding-left: 5px;
     }
 
     label {

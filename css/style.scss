@@ -70,6 +70,7 @@ footer {
     align-items: center;
     background-color: black; 
     height: 50px;
+    padding-left: 15px;
 
     p {
         color: white;
@@ -109,6 +110,12 @@ footer {
 
 /* --------------------- Productos --------------------- */
 @import "productos";
+
+/* --------------------- Productos --------------------- */
+.galeria {
+    row-gap: 15px;
+    margin: 25px 0;
+}
 
 /* --------------------- Quienes Somos --------------------- */
 @import "quienesS";

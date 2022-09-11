@@ -63,6 +63,7 @@ footer {
   align-items: center;
   background-color: black;
   height: 50px;
+  padding-left: 15px;
 }
 footer p {
   color: white;
@@ -226,6 +227,12 @@ footer p {
   margin-bottom: 15px;
 }
 
+/* --------------------- Productos --------------------- */
+.galeria {
+  row-gap: 15px;
+  margin: 25px 0;
+}
+
 /* --------------------- Quienes Somos --------------------- */
 .quienes1_titulo {
   grid-area: titulo1;
@@ -267,8 +274,6 @@ footer p {
 }
 
 .base-img-quienes, .quienes2_img, .quienes1_img {
-  border: solid 2px black;
-  border-radius: 0;
   width: 100%;
 }
 
@@ -350,9 +355,13 @@ footer p {
 }
 .gridForm input {
   height: 30px;
+  font-size: 1.5rem;
+  padding-left: 2%;
 }
 .gridForm textarea {
   resize: none;
+  font-size: 1.5rem;
+  padding-left: 5px;
 }
 .gridForm label {
   font-size: 1.75rem;
