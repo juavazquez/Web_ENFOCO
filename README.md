@@ -1,3 +1,3 @@
 # Web_ENFOCO
 
-Frontend of e-commerce web application
+Frontend of an e-commerce web application
